@@ -1,0 +1,59 @@
+
+.note {
+  position: absolute;
+  border: 1px solid #000;
+  background-color: #eec4db;
+  height: auto; 
+  max-height: 450px; 
+  overflow-y: auto; 
+  width: 250px;
+  
+  padding: 8px;
+  cursor: move;
+  user-select: none;
+  display: flex; 
+  flex-direction: column; 
+}
+
+
+.note textarea {
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.pinned {
+  background-color: #ecb1d0;
+  background-color: #ffbd59;
+  position: sticky;
+  width: 250px;
+  z-index: 1;
+}
+
+.pin-indicator {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 12px;
+}
+
+.buttons {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  
+}
+
+.pin-button,
+.delete-button {
+  margin-bottom: 8px;
+  border:0.5px solid black;
+  background-color: #fff;
+}
+
+.edit-button {
+  margin-left: 85%;
+}
