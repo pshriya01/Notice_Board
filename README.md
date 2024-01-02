@@ -32,13 +32,11 @@ REACT | HTML5 | CSS3 | JavaScript
    ```bash
    git clone https://github.com/pshriya01/notice_board.git
 
-2. Install dependencies
+2. Install dependencies and run the application
  ```bash 
-npm install
+     npm install
 
-3. Run the application
-```bash
- npm start
+     npm start
 
 
 
