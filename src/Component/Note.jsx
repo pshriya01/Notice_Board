@@ -96,7 +96,7 @@ export default function Note({ id, content, position, pinned, onDelete, onUpdate
         rows="4" cols="30"
         
         disabled={true}
-        style={{marginTop:"11px",fontSize:"20px"}}
+        style={{marginTop:"13px",fontSize:"20px"}}
       />
         <button className="edit-button" style={{backgroundColor:pinned?"#ffbd59":"#ecb1d0"}} onClick={handleEditClick}>Edit</button>
 

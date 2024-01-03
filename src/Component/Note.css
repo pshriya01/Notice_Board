@@ -2,6 +2,7 @@
 .note {
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #eec4db;
   height: auto; 
   max-height: 500px; 
@@ -51,12 +52,13 @@
 .delete-button {
   margin-bottom: 8px;
   border:none;
-  background-color: #ecb1d0;
+  /* background-color: #ecb1d0; */
  
 }
 
 .edit-button {
   margin-left: 85%;
   background-color:#ecb1d0;
+  border: none;
 
 }
