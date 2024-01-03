@@ -3,11 +3,7 @@ import "./Board.css"
 import { useState } from 'react';
 import Note from "./Note";
 const Board = () => {
-    const [notes, setNotes] = useState([
-        { id: 1, content: '', position: { x: 50, y: 50 }, pinned: false },
-        { id: 2, content: '', position: { x: 200, y: 100 }, pinned: false },
-    
-      ]);
+    const [notes, setNotes] = useState([]);
     
       const addNote = () => {
         const newNote = {

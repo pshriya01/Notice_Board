@@ -69,8 +69,8 @@ export default function Note({ id, content, position, pinned, onDelete, onUpdate
   >
     {pinned && <div className="pin-indicator">&#128204;</div>}
     <div className="buttons">
-      <button style={{height:"20px"}} className="pin-button" onClick={handlePinClick}>{pinned ? <img  src={unpin}/> : '📌'}</button>
-      <button className="delete-button" onClick={handleDelete}>x</button>
+      <button style={{height:"20px",backgroundColor:pinned?"#ffbd59":"#ecb1d0"}} className="pin-button" onClick={handlePinClick}>{pinned ? <img  src={unpin}/> : '📌'}</button>
+      <button style={{backgroundColor:pinned?"#ffbd59":"#ecb1d0"}} className="delete-button" onClick={handleDelete}>x</button>
     </div>
     {isEditing ? (
       <textarea
@@ -96,9 +96,9 @@ export default function Note({ id, content, position, pinned, onDelete, onUpdate
         rows="4" cols="30"
         
         disabled={true}
-        style={{marginTop:"8px"}}
+        style={{marginTop:"11px",fontSize:"20px"}}
       />
-        <button className="edit-button" onClick={handleEditClick}>Edit</button>
+        <button className="edit-button" style={{backgroundColor:pinned?"#ffbd59":"#ecb1d0"}} onClick={handleEditClick}>Edit</button>
 
       </div>
     )}
